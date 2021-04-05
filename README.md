@@ -6,7 +6,7 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Henriquecesp/desafiofullstack">
 
-  <a href="https://github.com/Dale-gg/ZedJS/commits/master">
+  <a href="https://github.com/Henriquecesp/desafiofullstack/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Henriquecesp/desafiofullstack">
   </a>
 
