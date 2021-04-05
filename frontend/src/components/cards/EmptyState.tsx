@@ -22,9 +22,9 @@ const EmptyState = ({ called, loading }: IEmpty): JSX.Element => {
       </div>
       <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
         <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-          {called ? "Nenhum dado foi encontrado ☹" : "Seja bem vindo! 😁"}
-          <br className="hidden lg:inline-block" />
-          <br className="hidden lg:inline-block" />
+          {called ? "Nenhum dado foi encontrado ☹" : "Seja bem vindo 😁"}
+          <br />
+          <br />
           Faça uma {called && "nova"} busca!
         </h1>
       </div>
