@@ -23,7 +23,8 @@ const FormSearch = ({ getQuestions }: IFormQuery): JSX.Element => {
           entusiastas na área de programação de computadores.
         </p>
         <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-          Faça uma busca utilizando os filtros abaixo.
+          Faça uma busca utilizando os filtros abaixo. Por padrão, sempre busca
+          resultados para a tag 'Javascript'.
         </p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
