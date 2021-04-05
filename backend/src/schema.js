@@ -1,4 +1,12 @@
 exports.typeDefs = `
+  enum Sort {
+    activity
+    votes
+    creation
+    hot
+    week
+    month
+  }
   type Owner {
     reputation: Int
     user_id: Int
