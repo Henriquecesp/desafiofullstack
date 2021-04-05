@@ -6,24 +6,27 @@ import QuestionCard, { Question } from "./components/cards/QuestionCard";
 import FormSearch from "./components/form/FormSearch";
 import EmptyState from "./components/cards/EmptyState";
 import { ReactComponent as Loading } from "./components/assets/loading.svg";
+import { QueryParams } from "./components/graphql/types";
 
 function App(): JSX.Element {
-  const [getQuestions, { data, called, loading }] = useLazyQuery(GET_QUESTION, {
-    variables: {
-      tags: `javascript;`,
-    },
-  });
+  const [getQuestions, { data, called, loading }] = useLazyQuery(GET_QUESTION);
 
-  if (data) {
-    console.log(data);
-  }
+  const handleGetQuestions = (params: QueryParams) => {
+    getQuestions({
+      variables: {
+        tags: `javascript;${params.tags}`,
+        score: params.score,
+        sort: params.sort,
+        limit: params.limit,
+      },
+    });
+  };
 
   return (
     <Layout>
-      {!called && <button onClick={() => getQuestions()}>BUSCAR</button>}
-      <FormSearch />
+      <FormSearch getQuestions={handleGetQuestions} />
       {loading && <Loading />}
-      {data ? (
+      {data && !!data.getQuestions[0] ? (
         data.getQuestions.map((question: Question) => (
           <QuestionCard question={question} key={question.question_id} />
         ))
