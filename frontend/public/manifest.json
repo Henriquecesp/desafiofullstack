@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "StackOveflow Questions",
+  "name": "StackOveflow Questions with GraphQL",
   "icons": [
     {
       "src": "favicon.ico",
@@ -382,6 +382,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ec4899",
+  "background_color": "#111827"
 }
