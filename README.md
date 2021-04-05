@@ -20,6 +20,14 @@
   <a href="#-how-to-contribute">🤔 How to contribute</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
+### Deploy
+
+[GraphQL Playground](https://graphql-cesp.herokuapp.com/graphql)
+
+[FrontEnd Application](https://stackoverflow-henriquecesp.vercel.app/)
+
+---
+
 ## 🚀 Technology
 
 This project was developed with the following technologies:
