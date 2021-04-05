@@ -21,4 +21,12 @@ exports.typeDefs = `
     link: String
     title: String
   }
+  type Query {
+    getQuestions(
+      limit: String
+      score: String
+      sort: Sort
+      tags: String!
+    ): [Question]
+  }
 `;
