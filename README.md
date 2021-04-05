@@ -1,3 +1,6 @@
+<p align="center">
+  <img alt="App Logo" src="https://github.com/Henriquecesp/desafiofullstack/blob/master/frontend/public/android/android-launchericon-192-192.png">
+</p>
 <h1 align="center">
   🚀 Desafio FullStack 👩‍💻
 </h1>
